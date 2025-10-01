@@ -6,4 +6,18 @@
     Usando for...of, calcule o custo total de todas as contas já com o juro aplicado.
     Apresente para o usuário qual será o valor final da compra.
     */
+    let cnp = [50.00, 15.50, 120.00, 80];
+    let juros = Number(prompt("Quantos por cento de juros você quer aplicar?"));
+    let contascomjuros = []
+
+    itemcj = []
+
+    for (item of cnp) {
+        juro = (item * juros) / 100;
+        itemcj = juro + item 
+        contascomjuros.push(itemcj)
+    }
+
+
+alert(`${contascomjuros}`)
 </script>

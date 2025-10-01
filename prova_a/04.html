@@ -8,4 +8,15 @@
     Apresente para o usuário quais itens ele conseguirá comprar no mercado.
 
     */
+
+
+   let listaDeCompras = ['pão', 'queijo', 'leite', 'suco'];
+   let itensDisponiveis = ['maçã', 'pão', 'leite', 'manteiga', 'café'];
+
+    let conseguir = []
+
+    for (let item of listaDeCompras) {
+        if (itensDisponiveis.includes(item)) conseguir.push(item)
+    }
+    alert(`Os itens que você vai conseguir comprar serão: ${conseguir.join(" e ")}`)
 </script>
