@@ -10,14 +10,15 @@
     let juros = Number(prompt("Quantos por cento de juros você quer aplicar?"));
     let contascomjuros = []
 
-    itemcj = []
-
-    for (item of cnp) {
-        juro = (item * juros) / 100;
-        itemcj = juro + item 
-        contascomjuros.push(itemcj)
+    for (numero of cnp) {
+        numero = (numero * juros) / 100;
+        contascomjuros.push(numero)
     }
+let soma = 0;
 
+for (let numero of contascomjuros) {
+    soma = soma + numero;
+}
 
-alert(`${contascomjuros}`)
+alert(`${soma}`);
 </script>
