@@ -5,16 +5,15 @@
     Depois, usando for...of, encontre qual é a quantidade de números ímpares presentes no Array.
     Apresente para o usuário a quantidade de números ímpares.
     */
-    let numeros = [33, 5, 88, 12, 91, 25];
-    let novoNumero = Number(prompt(`Informe um novo número para adicionar a lista`));
-    let numerosImpares = [];
-    numeros.push(novoNumero);
-
-    for(let numero of numeros) {
-        if (numero % 2 === 1) {
-            numerosImpares.push(numero)
-        }
-    }
     
-    alert(`A quantidade de números impares é: ${numerosImpares.length}.`);
+   let numeros = [33, 5, 88, 12, 91, 25];
+   let novoNumero = Number(prompt(`Informe um novo número:`));
+   numeros.push(novoNumero)
+   let impares = [];
+
+   for (let num of numeros)
+   if (num % 2 !== 0) {
+    impares.push(num)
+   }
+    alert(`A quantidade de números ímpares é: ${impares.length}`)
 </script>
