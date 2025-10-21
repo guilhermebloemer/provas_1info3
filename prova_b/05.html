@@ -7,16 +7,19 @@
     Ao final, exiba o novo array com as cidades que atenderam a condição estabelecida.
     */
 
+
     let cidade = ["Recife", "Salvador", "Rio de Janeiro", "São Paulo", "Manaus"];
-    let letra = prompt(`Digite uma letra`).toUpperCase();
+    let letra = prompt(`Digite uma letra:`).trim().toUpperCase();
     let posi = 0;
     let cidadeComLetra = [];
+    
 
-    for(let item of cidade) {
-        if (item[0] === letra) {
-            cidadeComLetra.push(item)
+    for (let item of cidade) {
+    if (item[0]  === letra) {
+        cidadeComLetra.push(item)
         }
     }
-
-    if (cidadeComLetra)
+    if (cidadeComLetra.length > 0) {
+        alert(`As cidades que atenderam a condição estabelecida são: ${cidadeComLetra.join(", ")}.`);
+  
 </script>
